@@ -1,5 +1,10 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const restartButton = document.getElementById('restart-button');
+
+restartButton.addEventListener('click', () => {
+    location.reload();
+});
 
 const jump = () => {
     mario.classList.add('jump');
